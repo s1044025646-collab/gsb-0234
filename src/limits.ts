@@ -1,0 +1,5 @@
+export const LIMITS = {
+  MAX_HTML_BYTES: 2 * 1024 * 1024,
+  MAX_SELECTOR_LENGTH: 300,
+  MAX_TEXT_SNIPPET_LENGTH: 80,
+} as const;

@@ -1,0 +1,26 @@
+{
+  "name": "html-selector-backend",
+  "version": "1.0.0",
+  "description": "离线 HTML 选择器查询与匹配解释后端（TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "test": "node --no-warnings=ExperimentalWarning --import tsx --test test/*.test.ts",
+  "start": "node --no-warnings=ExperimentalWarning dist/server.js",
+  "dev": "node --no-warnings=ExperimentalWarning --import tsx src/server.ts",
+  "cli": "node --no-warnings=ExperimentalWarning --import tsx src/cli.ts",
+  "demo": "node --no-warnings=ExperimentalWarning --import tsx scripts/demo.ts"
+  },
+  "dependencies": {
+    "parse5": "^7.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.0"
+  }
+}
