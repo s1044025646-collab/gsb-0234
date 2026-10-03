@@ -1,0 +1,25 @@
+{
+  "name": "html-selector-service",
+  "version": "1.0.0",
+  "description": "离线 HTML 选择器查询与匹配解释后端（API + CLI）",
+  "main": "dist/cli.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx --test test/*.test.ts",
+    "start": "node dist/cli.js serve",
+    "demo": "tsx scripts/demo.ts",
+    "cli": "tsx src/cli.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "parse5": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
